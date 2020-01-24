@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="506d45aa-faad-4059-a680-13d855907557">
+  <producedTypes>
+    <objectType typeId="320cb989-fd3a-4fb3-84f3-a4fe3ce62f3f" valueTypeId="036c09eb-f0d7-4db3-b66d-70ec47b354ec"/>
+  </producedTypes>
+  <name>FormGenerator</name>
+  <synonym>
+    <key>ru</key>
+    <value>Form generator</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="597c655d-f463-4bc1-94e4-c020c38eacb2"/>
+  <defaultForm>ExternalDataProcessor.FormGenerator.Form.Форма</defaultForm>
+  <attributes uuid="c8172a0c-6b63-4d08-9bb7-c6e933856c25">
+    <name>ИмяМодуля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя модуля</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="69e4251d-fbbd-409e-be13-6d6ccce1ea5c">
+    <name>ТекстПрограммногоДобавления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст программного добавления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="53426076-e9ad-4c8e-a0c5-09b2dd3f863a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6bbccc02-b858-4482-b83e-2bf1b3007e22">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7f6c8fb7-80ed-4da9-92a6-43f19482e451">
+    <name>ФормаЭлемента1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента1</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExternalDataProcessor>
