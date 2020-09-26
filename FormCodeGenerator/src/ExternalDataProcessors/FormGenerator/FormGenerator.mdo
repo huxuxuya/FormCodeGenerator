@@ -9,7 +9,7 @@
     <value>Form generator</value>
   </synonym>
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="8e7e8c11-9cef-4fd4-aeaa-877c99ffb08e"/>
-  <defaultForm>ExternalDataProcessor.FormGenerator.Form.Форма</defaultForm>
+  <defaultForm>ExternalDataProcessor.FormGenerator.Form.ФормаКодогенерации</defaultForm>
   <attributes uuid="c8172a0c-6b63-4d08-9bb7-c6e933856c25">
     <name>ИмяМодуля</name>
     <synonym>
@@ -30,6 +30,82 @@
     <synonym>
       <key>ru</key>
       <value>Текст программного добавления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="92ecf0c4-675d-4aa3-a320-2329b4083f5a">
+    <name>ДеревоФорм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дерево форм</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c195ef85-b127-471f-a5ac-b895f8e27af5">
+    <name>ДеревоРеквизитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дерево реквизитов</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b9e68670-f2f3-4a31-a34d-3ebc4c827b5d">
+    <name>АдресВоВременномХранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес во временном хранилище</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6578e972-b73c-4082-96e7-4b0b19836ce5">
+    <name>ИмяПодключеннойОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя подключенной обработки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2ca7f13b-2a73-4444-b8c9-e94651eb4758">
+    <name>ИмяВременногоФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя временного файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a350acfd-ba6d-42dc-9d05-b5c725e5cb16">
+    <name>ПолныйПутьКФорме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полный путь к форме</value>
     </synonym>
     <type>
       <types>String</types>
@@ -61,6 +137,24 @@
     <synonym>
       <key>ru</key>
       <value>Форма элемента1</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5883e9ef-a034-4e08-9c9c-a62a4ec78d6e">
+    <name>ФормаВыбораФормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора формы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="75c68c08-569c-45ae-95d2-d6de69b5e2ad">
+    <name>ФормаКодогенерации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма кодогенерации</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
