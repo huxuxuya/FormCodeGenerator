@@ -205,7 +205,7 @@
       <united>true</united>
       <showTitle>true</showTitle>
       <throughAlign>Auto</throughAlign>
-      <currentRowUse>DontUse</currentRowUse>
+      <currentRowUse>Auto</currentRowUse>
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
@@ -323,7 +323,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>ExternalDataProcessor.FormGenerator</types>
+      <types>ExternalDataProcessorObject.FormGenerator</types>
     </valueType>
     <view>
       <common>true</common>

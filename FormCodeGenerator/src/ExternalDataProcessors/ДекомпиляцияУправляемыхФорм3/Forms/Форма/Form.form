@@ -1609,7 +1609,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>ExternalDataProcessor.RefferenceCodeGenerator</types>
+      <types>ExternalDataProcessorObject.ДекомпиляцияУправляемыхФорм3</types>
     </valueType>
     <view>
       <common>true</common>

@@ -8,7 +8,7 @@
     <key>ru</key>
     <value>Form generator</value>
   </synonym>
-  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="597c655d-f463-4bc1-94e4-c020c38eacb2"/>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="8e7e8c11-9cef-4fd4-aeaa-877c99ffb08e"/>
   <defaultForm>ExternalDataProcessor.FormGenerator.Form.Форма</defaultForm>
   <attributes uuid="c8172a0c-6b63-4d08-9bb7-c6e933856c25">
     <name>ИмяМодуля</name>
