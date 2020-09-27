@@ -114,6 +114,98 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="a3d49aa8-8432-44d1-88d5-9f55cee09f93">
+    <name>ДеревоЭлементов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дерево элементов</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="b34f3ae5-029a-4c14-8f55-46e09fec5725">
+    <producedTypes>
+      <objectType typeId="f477adde-3a48-48fe-a71b-f175a0ce1f2d" valueTypeId="4f383ab1-5dd6-41ef-a781-6b2fdf754395"/>
+      <rowType typeId="940325a2-76c2-40d8-a887-7641f37aac19" valueTypeId="7606487f-04bb-45d1-8bff-bd71ba975610"/>
+    </producedTypes>
+    <name>ТаблицаКоманд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица команд</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="654ac72d-dda4-44f3-93f6-35bb6ea18410">
+      <name>Выбран</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выбран</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="089473bb-3d8b-453d-b367-33bec17b970c">
+      <name>Имя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="8df181ec-dde9-4e83-96d4-4a21956c1695">
+      <name>Заголовок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заголовок</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="d643a1a9-4309-4b87-86ee-cfa277e4859d">
+      <name>ТекстСоздания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст создания</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
   <forms uuid="53426076-e9ad-4c8e-a0c5-09b2dd3f863a">
     <name>Форма</name>
     <synonym>

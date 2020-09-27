@@ -527,6 +527,15 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>ПриОткрытии</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <saveDataInSettings>UseList</saveDataInSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
@@ -552,6 +561,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ФормаАнализируемая</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>Объект</name>
@@ -663,6 +675,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ФормаТипОбъекта</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ФормаИмяОбъекта</name>
@@ -681,6 +696,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ФормаИмяОбъекта</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ФормаИмяФормы</name>
@@ -699,6 +717,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>ФормаИмяФормы</segments>
+    </settingsSavedData>
   </attributes>
   <attributes>
     <name>ТекстРедакторФорм</name>
