@@ -148,6 +148,17 @@
       <stringQualifiers/>
     </type>
   </attributes>
+  <attributes uuid="e8aa86d2-7385-424b-9dee-070e1b05a038">
+    <name>ТекстДобавленияКоманд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст добавления команд</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
   <tabularSections uuid="b34f3ae5-029a-4c14-8f55-46e09fec5725">
     <producedTypes>
       <objectType typeId="f477adde-3a48-48fe-a71b-f175a0ce1f2d" valueTypeId="4f383ab1-5dd6-41ef-a781-6b2fdf754395"/>
@@ -226,6 +237,28 @@
       <fillValue xsi:type="core:StringValue">
         <value></value>
       </fillValue>
+    </attributes>
+    <attributes uuid="5f5b7c6c-a5d8-41da-9773-d706390c148c">
+      <name>ТекстСозданиеКонтекста</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст создание контекста</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+    </attributes>
+    <attributes uuid="57d7975b-6b7f-48b7-b0fc-45955789c979">
+      <name>ТекстЗаполненияСвойств</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст заполнения свойств</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
     </attributes>
   </tabularSections>
   <forms uuid="53426076-e9ad-4c8e-a0c5-09b2dd3f863a">

@@ -190,6 +190,17 @@
         <value></value>
       </fillValue>
     </attributes>
+    <attributes uuid="dc6bfdfb-eb32-448b-8f5f-5564586cbc2e">
+      <name>ТекстЗаполненияСвойств</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст заполнения свойств</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+    </attributes>
   </tabularSections>
   <forms uuid="8d31403c-bc40-4a48-bf12-e64957889a23">
     <name>Форма</name>
