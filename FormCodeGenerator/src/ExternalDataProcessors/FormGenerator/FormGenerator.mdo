@@ -159,6 +159,30 @@
       <stringQualifiers/>
     </type>
   </attributes>
+  <attributes uuid="f2de1758-8d33-4be6-9d7d-b8375a2cb158">
+    <name>ДеревоРеквизитовЭталон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дерево реквизитов эталон</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0cb87c8b-1df6-4cf4-b217-8c9e2f444e9d">
+    <name>ДеревоЭлементовЭталон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дерево элементов эталон</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="b34f3ae5-029a-4c14-8f55-46e09fec5725">
     <producedTypes>
       <objectType typeId="f477adde-3a48-48fe-a71b-f175a0ce1f2d" valueTypeId="4f383ab1-5dd6-41ef-a781-6b2fdf754395"/>
@@ -250,6 +274,108 @@
       </type>
     </attributes>
     <attributes uuid="57d7975b-6b7f-48b7-b0fc-45955789c979">
+      <name>ТекстЗаполненияСвойств</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст заполнения свойств</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="72ce7215-4093-4e3a-82b3-85b8b1af011f">
+    <producedTypes>
+      <objectType typeId="81fd85fa-5b70-4ddf-bff3-d41db884756b" valueTypeId="dee3ad17-5582-4f9f-8fc0-5ca8412a480b"/>
+      <rowType typeId="467ea0e9-729f-439c-9c4d-2d22bedf6105" valueTypeId="6ef70295-42f9-40dd-969c-86e49f3fa117"/>
+    </producedTypes>
+    <name>ТаблицаКомандЭталон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица команд эталон</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="6132f7f4-a932-4f20-8397-03b40ac1383f">
+      <name>Выбран</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выбран</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e9936f72-ea0a-4ddd-bd2f-ee9b37966b45">
+      <name>Имя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="8107aea2-b829-474c-a0e3-2469cfbaa429">
+      <name>Заголовок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заголовок</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="0c64502e-5c76-45ac-8260-a307d23e5a77">
+      <name>ТекстСоздания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст создания</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="2acd80b9-978a-4175-83d0-a7d300be7132">
+      <name>ТекстСозданиеКонтекста</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст создание контекста</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+    </attributes>
+    <attributes uuid="f775bd5a-ad4e-43b9-bcc3-f8e5c1b1bba0">
       <name>ТекстЗаполненияСвойств</name>
       <synonym>
         <key>ru</key>
