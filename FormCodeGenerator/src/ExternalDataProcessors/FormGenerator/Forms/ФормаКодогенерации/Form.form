@@ -2025,6 +2025,10 @@
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
+          <inputHint>
+            <key>ru</key>
+            <value>Сочетание клавиш CRTL + R обновляет данные.</value>
+          </inputHint>
         </extInfo>
       </items>
       <visible>true</visible>
