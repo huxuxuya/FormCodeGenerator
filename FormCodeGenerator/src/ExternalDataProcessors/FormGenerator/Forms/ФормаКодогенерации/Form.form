@@ -1306,6 +1306,55 @@
           <items xsi:type="form:FormGroup">
             <name>ГруппаКоманды</name>
             <id>96</id>
+            <items xsi:type="form:Decoration">
+              <name>ДекорацияИнформация</name>
+              <id>187</id>
+              <title>
+                <key>ru</key>
+                <value>С точки зрения здравого смысла при программной доработке форм, список с командами фромы не нужен.</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <toolTip>
+                <key>ru</key>
+                <value>Не нужен список команд, потому что их нет смысла отдельно без кнопок добавлять, а если создавать код от кнопок, то текст добавления команды сгенерируется от самой кнопки и имени команды, которая там указана. Таким образом информации в кнопке формы полностью достаточно для создания кода для программного добавления команды.</value>
+              </toolTip>
+              <toolTipRepresentation>Button</toolTipRepresentation>
+              <extendedTooltip>
+                <name>ДекорацияИнформацияРасширеннаяПодсказка</name>
+                <id>189</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ДекорацияИнформацияКонтекстноеМеню</name>
+                <id>188</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
             <items xsi:type="form:Table">
               <name>ОбъектТаблицаКоманд</name>
               <id>98</id>
@@ -1803,9 +1852,7 @@
             </items>
             <visible>true</visible>
             <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
+            <userVisible/>
             <title>
               <key>ru</key>
               <value>Команды</value>
