@@ -397,33 +397,6 @@
       </type>
     </attributes>
   </tabularSections>
-  <forms uuid="53426076-e9ad-4c8e-a0c5-09b2dd3f863a">
-    <name>Форма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="6bbccc02-b858-4482-b83e-2bf1b3007e22">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="7f6c8fb7-80ed-4da9-92a6-43f19482e451">
-    <name>ФормаЭлемента1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента1</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="5883e9ef-a034-4e08-9c9c-a62a4ec78d6e">
     <name>ФормаВыбораФормы</name>
     <synonym>
