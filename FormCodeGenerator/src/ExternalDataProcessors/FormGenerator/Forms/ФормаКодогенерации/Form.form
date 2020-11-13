@@ -1981,6 +1981,61 @@
               <currentRowUse>Auto</currentRowUse>
             </extInfo>
           </items>
+          <items xsi:type="form:FormField">
+            <name>ОбъектТекстШаблонаОкружения</name>
+            <id>196</id>
+            <title>
+              <key>ru</key>
+              <value>Шаблон окружающей процедуры</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.ТекстШаблонаОкружения</segments>
+            </dataPath>
+            <extendedTooltip>
+              <name>ОбъектТекстШаблонаОкруженияРасширеннаяПодсказка</name>
+              <id>198</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ОбъектТекстШаблонаОкруженияКонтекстноеМеню</name>
+              <id>197</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <multiLine>true</multiLine>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -2990,6 +3045,9 @@
     <edit>
       <common>true</common>
     </edit>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>Объект.ТекстШаблонаОкружения</segments>
+    </settingsSavedData>
     <additionalColumns>
       <tablePath xsi:type="form:DataPath">
         <segments>Объект.ДеревоРеквизитов</segments>
