@@ -2529,6 +2529,10 @@
               <segments>Объект.ТекстПрограммногоДобавления</segments>
             </dataPath>
             <titleLocation>None</titleLocation>
+            <toolTip>
+              <key>ru</key>
+              <value>Сочетание клавиш CRTL + R обновляет данные.</value>
+            </toolTip>
             <extendedTooltip>
               <name>ТекстПрограммногоДобавленияРасширеннаяПодсказка</name>
               <id>6</id>
@@ -3920,6 +3924,23 @@
       <segments>ФормаАнализируемая</segments>
     </settingsSavedData>
   </attributes>
+  <attributes>
+    <name>ПоказатьНастройки</name>
+    <title>
+      <key>ru</key>
+      <value>Показать настройки</value>
+    </title>
+    <id>27</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <formCommands>
     <name>ПеречитатьФорму</name>
     <title>
@@ -4027,6 +4048,11 @@
     <picture xsi:type="core:PictureRef">
       <picture>StdPicture.Setting</picture>
     </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Настройки</name>
+      </handler>
+    </action>
     <representation>Picture</representation>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
