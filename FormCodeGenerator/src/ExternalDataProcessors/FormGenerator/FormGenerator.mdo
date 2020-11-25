@@ -215,6 +215,19 @@
       <stringQualifiers/>
     </type>
   </attributes>
+  <attributes uuid="e9100614-854c-4ac6-a57c-7500d00fdece">
+    <name>АдресДанныхФайлаВоВременномХранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес данных файла во временном хранилище</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="b34f3ae5-029a-4c14-8f55-46e09fec5725">
     <producedTypes>
       <objectType typeId="f477adde-3a48-48fe-a71b-f175a0ce1f2d" valueTypeId="4f383ab1-5dd6-41ef-a781-6b2fdf754395"/>
