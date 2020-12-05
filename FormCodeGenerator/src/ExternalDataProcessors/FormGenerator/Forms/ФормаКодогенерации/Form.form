@@ -79,6 +79,44 @@
         <locationInCommandBar>InCommandBar</locationInCommandBar>
       </items>
       <items xsi:type="form:Button">
+        <name>ОбновитьИзПалитры</name>
+        <id>232</id>
+        <title>
+          <key>ru</key>
+          <value>Обновить из палитры</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ОбновитьИзПалитрыРасширеннаяПодсказка</name>
+          <id>233</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>CommandBarHyperlink</type>
+        <commandName>Form.Command.ОбновитьИзПалитры</commandName>
+        <representation>PictureAndText</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <picture xsi:type="core:PictureRef">
+          <picture>StdPicture.DataCompositionConditionalAppearance</picture>
+        </picture>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
         <name>ФормаСравнитьФормыУстановитьФлажки</name>
         <id>153</id>
         <visible>true</visible>
@@ -2689,17 +2727,172 @@
         <items xsi:type="form:FormGroup">
           <name>ГруппаСтраницаНастройки</name>
           <id>217</id>
-          <items xsi:type="form:Button">
-            <name>ОбновитьИзПалитры</name>
-            <id>232</id>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаНастройкаПалитры</name>
+            <id>237</id>
+            <items xsi:type="form:FormField">
+              <name>РежимРаботыСПалитрой</name>
+              <id>234</id>
+              <title>
+                <key>ru</key>
+                <value>Использовать палитру</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>ВключенРаботыСПалитрой</segments>
+              </dataPath>
+              <handlers>
+                <event>OnChange</event>
+                <name>РежимРаботыСПалитройПриИзменении</name>
+              </handlers>
+              <extendedTooltip>
+                <name>РежимРаботыСПалитройРасширеннаяПодсказка</name>
+                <id>236</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>РежимРаботыСПалитройКонтекстноеМеню</name>
+                <id>235</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>CheckBoxField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:CheckBoxFieldExtInfo">
+                <checkBoxType>Switcher</checkBoxType>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormField">
+              <name>ОбновлятьДанныеПалитрыКаждые</name>
+              <id>239</id>
+              <title>
+                <key>ru</key>
+                <value>Обновлять каждые</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>ОбновлятьДанныеПалитрыКаждые</segments>
+              </dataPath>
+              <handlers>
+                <event>OnChange</event>
+                <name>ОбновлятьДанныеПалитрыКаждыеПриИзменении</name>
+              </handlers>
+              <extendedTooltip>
+                <name>ОбновлятьДанныеПалитрыКаждыеРасширеннаяПодсказка</name>
+                <id>241</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ОбновлятьДанныеПалитрыКаждыеКонтекстноеМеню</name>
+                <id>240</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>InputField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:InputFieldExtInfo">
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <wrap>true</wrap>
+                <chooseType>true</chooseType>
+                <typeDomainEnabled>true</typeDomainEnabled>
+                <textEdit>true</textEdit>
+              </extInfo>
+            </items>
+            <items xsi:type="form:Decoration">
+              <name>Декорация4</name>
+              <id>242</id>
+              <title>
+                <key>ru</key>
+                <value>сек.</value>
+              </title>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <extendedTooltip>
+                <name>Декорация4РасширеннаяПодсказка</name>
+                <id>244</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>Декорация4КонтекстноеМеню</name>
+                <id>243</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </items>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
             </userVisible>
             <extendedTooltip>
-              <name>ОбновитьИзПалитрыРасширеннаяПодсказка</name>
-              <id>233</id>
+              <name>ГруппаНастройкаПалитрыРасширеннаяПодсказка</name>
+              <id>238</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
@@ -2712,13 +2905,14 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <type>UsualButton</type>
-            <commandName>Form.Command.ОбновитьИзПалитры</commandName>
-            <representation>Auto</representation>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <placementArea>UserCmds</placementArea>
-            <representationInContextMenu>Auto</representationInContextMenu>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>AlwaysHorizontal</group>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
           </items>
           <items xsi:type="form:FormField">
             <name>ОбъектИмяМодуля</name>
@@ -4043,6 +4237,43 @@
     <id>27</id>
     <valueType>
       <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ВключенРаботыСПалитрой</name>
+    <title>
+      <key>ru</key>
+      <value>Включен работы с палитрой</value>
+    </title>
+    <id>28</id>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ОбновлятьДанныеПалитрыКаждые</name>
+    <title>
+      <key>ru</key>
+      <value>Обновлять данные палитры каждые</value>
+    </title>
+    <id>29</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
     </valueType>
     <view>
       <common>true</common>
