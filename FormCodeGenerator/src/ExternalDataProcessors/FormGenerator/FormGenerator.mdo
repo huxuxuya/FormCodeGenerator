@@ -251,6 +251,19 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="5fca2330-d110-4b5c-bf40-b12092da21e0">
+    <name>ИспользуемоеИмяФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используемое имя файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
   <tabularSections uuid="b34f3ae5-029a-4c14-8f55-46e09fec5725">
     <producedTypes>
       <objectType typeId="f477adde-3a48-48fe-a71b-f175a0ce1f2d" valueTypeId="4f383ab1-5dd6-41ef-a781-6b2fdf754395"/>
