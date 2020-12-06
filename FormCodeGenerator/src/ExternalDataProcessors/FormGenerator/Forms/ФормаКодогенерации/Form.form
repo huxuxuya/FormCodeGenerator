@@ -3799,6 +3799,12 @@
     <settingsSavedData xsi:type="form:DataPath">
       <segments>Объект.ТекстШаблонаОкружения</segments>
     </settingsSavedData>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>Объект.ИмяМодуля</segments>
+    </settingsSavedData>
+    <settingsSavedData xsi:type="form:DataPath">
+      <segments>Объект.ИспользованиеСравнениеСЭталоном</segments>
+    </settingsSavedData>
     <additionalColumns>
       <tablePath xsi:type="form:DataPath">
         <segments>Объект.ДеревоРеквизитов</segments>
