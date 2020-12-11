@@ -219,6 +219,40 @@
       <name>ГруппаКоманднаяПанельПраво</name>
       <id>206</id>
       <items xsi:type="form:Button">
+        <name>ОтключитьРежимПалитры</name>
+        <id>245</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ОтключитьРежимПалитрыРасширеннаяПодсказка</name>
+          <id>246</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>CommandBarHyperlink</type>
+        <commandName>Form.Command.ВыключитьРежимПалитры</commandName>
+        <representation>PictureAndText</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <picture xsi:type="core:PictureRef">
+          <picture>StdPicture.AppearanceCircleEmpty</picture>
+        </picture>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
+      <items xsi:type="form:Button">
         <name>Настройки</name>
         <id>208</id>
         <visible>true</visible>
@@ -1158,6 +1192,10 @@
               <horizontalAlign>Left</horizontalAlign>
               <autoFill>true</autoFill>
             </autoCommandBar>
+            <handlers>
+              <event>OnActivateRow</event>
+              <name>ОбъектДеревоЭлементовПриАктивизацииСтроки</name>
+            </handlers>
             <searchStringAddition>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -4416,6 +4454,23 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ОбновитьИзПалитры</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ВыключитьРежимПалитры</name>
+    <title>
+      <key>ru</key>
+      <value>Выключить режим палитры</value>
+    </title>
+    <id>8</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ВыключитьРежимПалитры</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
