@@ -105,14 +105,14 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <type>CommandBarHyperlink</type>
         <commandName>Form.Command.ОбновитьИзПалитры</commandName>
         <representation>PictureAndText</representation>
+        <defaultButton>true</defaultButton>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <placementArea>UserCmds</placementArea>
         <picture xsi:type="core:PictureRef">
-          <picture>StdPicture.DataCompositionConditionalAppearance</picture>
+          <picture>StdPicture.Reread</picture>
         </picture>
         <representationInContextMenu>Auto</representationInContextMenu>
       </items>
@@ -144,6 +144,39 @@
         <placementArea>UserCmds</placementArea>
         <representationInContextMenu>Auto</representationInContextMenu>
         <locationInCommandBar>InAdditionalSubmenu</locationInCommandBar>
+      </items>
+      <items xsi:type="form:Button">
+        <name>ОтключитьРежимПалитры</name>
+        <id>245</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ОтключитьРежимПалитрыРасширеннаяПодсказка</name>
+          <id>246</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.ВыключитьРежимПалитры</commandName>
+        <representation>PictureAndText</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <picture xsi:type="core:PictureRef">
+          <picture>StdPicture.AppearanceCircleEmpty</picture>
+        </picture>
+        <representationInContextMenu>Auto</representationInContextMenu>
       </items>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -218,40 +251,6 @@
     <items xsi:type="form:FormGroup">
       <name>ГруппаКоманднаяПанельПраво</name>
       <id>206</id>
-      <items xsi:type="form:Button">
-        <name>ОтключитьРежимПалитры</name>
-        <id>245</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ОтключитьРежимПалитрыРасширеннаяПодсказка</name>
-          <id>246</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <type>CommandBarHyperlink</type>
-        <commandName>Form.Command.ВыключитьРежимПалитры</commandName>
-        <representation>PictureAndText</representation>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <picture xsi:type="core:PictureRef">
-          <picture>StdPicture.AppearanceCircleEmpty</picture>
-        </picture>
-        <representationInContextMenu>Auto</representationInContextMenu>
-      </items>
       <items xsi:type="form:Button">
         <name>Настройки</name>
         <id>208</id>
@@ -881,9 +880,7 @@
               <id>84</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
+              <userVisible/>
               <dataPath xsi:type="form:DataPath">
                 <segments>Объект.ДеревоЭлементов.ТекстНачало</segments>
               </dataPath>
@@ -984,9 +981,7 @@
               <id>76</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
+              <userVisible/>
               <dataPath xsi:type="form:DataPath">
                 <segments>Объект.ДеревоЭлементов.ТекстУстановкиСвойств</segments>
               </dataPath>
@@ -1135,9 +1130,7 @@
               <id>199</id>
               <visible>true</visible>
               <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
+              <userVisible/>
               <dataPath xsi:type="form:DataPath">
                 <segments>Объект.ДеревоЭлементов.ТекстПослеСоздания</segments>
               </dataPath>
@@ -1192,10 +1185,6 @@
               <horizontalAlign>Left</horizontalAlign>
               <autoFill>true</autoFill>
             </autoCommandBar>
-            <handlers>
-              <event>OnActivateRow</event>
-              <name>ОбъектДеревоЭлементовПриАктивизацииСтроки</name>
-            </handlers>
             <searchStringAddition>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -1515,9 +1504,7 @@
                 <id>43</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
+                <userVisible/>
                 <dataPath xsi:type="form:DataPath">
                   <segments>Объект.ДеревоРеквизитов.ТекстСоздания</segments>
                 </dataPath>
@@ -1620,9 +1607,7 @@
                 <id>190</id>
                 <visible>true</visible>
                 <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
+                <userVisible/>
                 <dataPath xsi:type="form:DataPath">
                   <segments>Объект.ДеревоРеквизитов.ТекстИзменения</segments>
                 </dataPath>
