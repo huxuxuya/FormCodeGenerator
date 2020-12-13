@@ -495,4 +495,13 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="8c8b8b3d-0b94-4ec5-881b-ba2fe8c6bea0">
+    <name>ФормаПроверкиКода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма проверки кода</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:ExternalDataProcessor>

@@ -470,10 +470,6 @@
           <event>StartChoice</event>
           <name>ФормаАнализируемаяНачалоВыбора</name>
         </handlers>
-        <handlers>
-          <event>ChoiceProcessing</event>
-          <name>ФормаАнализируемаяОбработкаВыбора</name>
-        </handlers>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
