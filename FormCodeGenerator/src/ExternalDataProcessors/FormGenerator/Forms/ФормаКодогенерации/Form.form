@@ -2750,62 +2750,97 @@
         <items xsi:type="form:FormGroup">
           <name>ГруппаСтраницаНастройки</name>
           <id>217</id>
-          <items xsi:type="form:FormGroup">
-            <name>ГруппаНастройкаПалитры</name>
-            <id>237</id>
-            <items xsi:type="form:FormField">
-              <name>РежимРаботыСПалитрой</name>
-              <id>234</id>
-              <title>
-                <key>ru</key>
-                <value>Использовать палитру</value>
-              </title>
+          <items xsi:type="form:FormField">
+            <name>РежимРаботыОбработки</name>
+            <id>247</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>РежимРаботыОбработки</segments>
+            </dataPath>
+            <titleLocation>Top</titleLocation>
+            <toolTip>
+              <key>ru</key>
+              <value>Данный режим работы доступент только при открытии обработки, как внешней, предполагает интерактивное изменение формы &quot;ФормаПалитры&quot;, данной обработки. При работе режиме &quot;Палитры&quot;, все изменения должны читаться в &quot;онлайн&quot; режиме, без повторного открытия обработки.</value>
+            </toolTip>
+            <toolTipRepresentation>ShowBottom</toolTipRepresentation>
+            <handlers>
+              <event>OnChange</event>
+              <name>РежимРаботыОбработкиПриИзменении</name>
+            </handlers>
+            <extendedTooltip>
+              <name>РежимРаботыОбработкиРасширеннаяПодсказка</name>
+              <id>249</id>
               <visible>true</visible>
               <enabled>true</enabled>
               <userVisible>
                 <common>true</common>
               </userVisible>
-              <dataPath xsi:type="form:DataPath">
-                <segments>ВключенРаботыСПалитрой</segments>
-              </dataPath>
-              <handlers>
-                <event>OnChange</event>
-                <name>РежимРаботыСПалитройПриИзменении</name>
-              </handlers>
-              <extendedTooltip>
-                <name>РежимРаботыСПалитройРасширеннаяПодсказка</name>
-                <id>236</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <type>Label</type>
-                <autoMaxWidth>true</autoMaxWidth>
-                <autoMaxHeight>true</autoMaxHeight>
-                <extInfo xsi:type="form:LabelDecorationExtInfo">
-                  <horizontalAlign>Left</horizontalAlign>
-                </extInfo>
-              </extendedTooltip>
-              <contextMenu>
-                <name>РежимРаботыСПалитройКонтекстноеМеню</name>
-                <id>235</id>
-                <visible>true</visible>
-                <enabled>true</enabled>
-                <userVisible>
-                  <common>true</common>
-                </userVisible>
-                <autoFill>true</autoFill>
-              </contextMenu>
-              <type>CheckBoxField</type>
-              <editMode>Enter</editMode>
-              <showInHeader>true</showInHeader>
-              <headerHorizontalAlign>Left</headerHorizontalAlign>
-              <showInFooter>true</showInFooter>
-              <extInfo xsi:type="form:CheckBoxFieldExtInfo">
-                <checkBoxType>Switcher</checkBoxType>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
               </extInfo>
-            </items>
+            </extendedTooltip>
+            <contextMenu>
+              <name>РежимРаботыОбработкиКонтекстноеМеню</name>
+              <id>248</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <dropListButton>true</dropListButton>
+              <choiceButton>false</choiceButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>Режим палитры</value>
+                </presentation>
+                <value xsi:type="core:StringValue">
+                  <value>Режим палитры</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>Режим чтения форм</value>
+                </presentation>
+                <value xsi:type="core:StringValue">
+                  <value>Режим чтения форм</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <presentation>
+                  <key>ru</key>
+                  <value>Режим сравнения форм</value>
+                </presentation>
+                <value xsi:type="core:StringValue">
+                  <value>Режим сравнения форм</value>
+                </value>
+              </choiceList>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаНастройкаПалитры</name>
+            <id>237</id>
             <items xsi:type="form:FormField">
               <name>ОбновлятьДанныеПалитрыКаждые</name>
               <id>239</id>
@@ -2937,9 +2972,52 @@
               <currentRowUse>Auto</currentRowUse>
             </extInfo>
           </items>
+          <items xsi:type="form:Decoration">
+            <name>Декорация5</name>
+            <id>253</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>Декорация5РасширеннаяПодсказка</name>
+              <id>255</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>Декорация5КонтекстноеМеню</name>
+              <id>254</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
           <items xsi:type="form:FormField">
             <name>ОбъектИмяМодуля</name>
             <id>219</id>
+            <titleTextColor xsi:type="core:ColorRef">
+              <color>Web.SlateGray</color>
+            </titleTextColor>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -2987,6 +3065,9 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textColor xsi:type="core:ColorRef">
+                <color>Web.SlateGray</color>
+              </textColor>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -2996,6 +3077,9 @@
               <key>ru</key>
               <value>Шаблон окружающей процедуры</value>
             </title>
+            <titleTextColor xsi:type="core:ColorRef">
+              <color>Web.SlateGray</color>
+            </titleTextColor>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -3043,55 +3127,10 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textColor xsi:type="core:ColorRef">
+                <color>Web.SlateGray</color>
+              </textColor>
             </extInfo>
-          </items>
-          <items xsi:type="form:FormField">
-            <name>ОбъектИспользованиеСравнениеСЭталоном</name>
-            <id>222</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ИспользованиеСравнениеСЭталоном</segments>
-            </dataPath>
-            <titleLocation>Right</titleLocation>
-            <handlers>
-              <event>OnChange</event>
-              <name>ОбъектИспользованиеСравнениеСЭталономПриИзменении</name>
-            </handlers>
-            <extendedTooltip>
-              <name>ОбъектИспользованиеСравнениеСЭталономРасширеннаяПодсказка</name>
-              <id>224</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <type>Label</type>
-              <autoMaxWidth>true</autoMaxWidth>
-              <autoMaxHeight>true</autoMaxHeight>
-              <extInfo xsi:type="form:LabelDecorationExtInfo">
-                <horizontalAlign>Left</horizontalAlign>
-              </extInfo>
-            </extendedTooltip>
-            <contextMenu>
-              <name>ОбъектИспользованиеСравнениеСЭталономКонтекстноеМеню</name>
-              <id>223</id>
-              <visible>true</visible>
-              <enabled>true</enabled>
-              <userVisible>
-                <common>true</common>
-              </userVisible>
-              <autoFill>true</autoFill>
-            </contextMenu>
-            <type>CheckBoxField</type>
-            <editMode>Enter</editMode>
-            <showInHeader>true</showInHeader>
-            <headerHorizontalAlign>Left</headerHorizontalAlign>
-            <showInFooter>true</showInFooter>
-            <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
           </items>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -4303,6 +4342,26 @@
       <numberQualifiers>
         <precision>3</precision>
       </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>РежимРаботыОбработки</name>
+    <title>
+      <key>ru</key>
+      <value>Режим работы обработки</value>
+    </title>
+    <id>30</id>
+    <valueType>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
     </valueType>
     <view>
       <common>true</common>
