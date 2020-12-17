@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e2a0e230-a35d-4702-abc6-9f5507b04ade">
+  <name>FormCodeGeneratorExtension</name>
+  <synonym>
+    <key>ru</key>
+    <value>Form code generator extension</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <defaultLanguage>Checked</defaultLanguage>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="4e2dbc1d-20ce-4ac1-8565-ea24bd30778e"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="1bb558c1-7783-4f27-b48f-3efad04267f9"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="855df076-ace5-4ee1-a190-d1126735dd78"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="333bc53d-9327-4cde-b443-a40dfb71226d"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="a40b9e02-21f8-4746-a7b9-2910856ba9cc"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="14e21606-2b5e-4453-ba66-f3683611d7e4"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="c384da02-d223-44e2-bc1f-8463eb00f728"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>FCG_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.14</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <vendor>https://github.com/huxuxuya</vendor>
+  <version>1.0.0.2</version>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <compatibilityMode>8.3.17</compatibilityMode>
+  <languages uuid="77a03cbb-ab2e-46e2-bea1-5568001941de">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <dataProcessors>DataProcessor.FormGenerator</dataProcessors>
+</mdclass:Configuration>
