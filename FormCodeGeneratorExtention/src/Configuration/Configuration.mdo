@@ -26,7 +26,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>https://github.com/huxuxuya</vendor>
-  <version>1.0.0.2</version>
+  <version>1.0.0.4</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <compatibilityMode>8.3.17</compatibilityMode>
   <languages uuid="77a03cbb-ab2e-46e2-bea1-5568001941de">
