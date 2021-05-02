@@ -8,7 +8,7 @@
     <key>ru</key>
     <value>Form generator</value>
   </synonym>
-  <comment>1.0.0.4</comment>
+  <comment>1.0.0.5b</comment>
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="c24aef99-f38e-46cc-a6bb-361394b6794f"/>
   <defaultForm>ExternalDataProcessor.FormGenerator.Form.ФормаКодогенерации</defaultForm>
   <attributes uuid="02a6ecfa-8586-4d1f-bb49-e200fce3bf47">

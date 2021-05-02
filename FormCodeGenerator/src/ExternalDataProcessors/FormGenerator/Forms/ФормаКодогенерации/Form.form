@@ -3801,10 +3801,6 @@
     <event>OnOpen</event>
     <name>ПриОткрытии</name>
   </handlers>
-  <handlers>
-    <event>OnCreateAtServer</event>
-    <name>ПриСозданииНаСервере</name>
-  </handlers>
   <excludedCommands>SaveValues</excludedCommands>
   <excludedCommands>RestoreValues</excludedCommands>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
